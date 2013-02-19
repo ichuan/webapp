@@ -1,0 +1,13 @@
+Deps
+=====
+- jquery: 1.9.1
+- backbone: 0.9.10
+- requirejs: 2.1.4
+- underscore: 1.4.4
+- bootstrap: 2.3.0
+
+Dev Flow
+========
+1. run `compass watch app/` in a console
+2. edit codes in `js/` and `sass/` from another console
+3. run `make` to build
