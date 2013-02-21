@@ -4,7 +4,7 @@ This is a single-page application([SPA](http://en.wikipedia.org/wiki/Single-page
 - Develop and production environment separation. Easy debugging and auto optimizing
 - Modular javascript development with requirejs
 - Productive css development with sass and compass
-- Simple html templating with [`_.template`](http://underscorejs.org/#template)
+- Simple html templating with [_.template](http://underscorejs.org/#template)
 
 
 Work Flow
