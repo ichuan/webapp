@@ -5,6 +5,7 @@ This is a single-page application([SPA](http://en.wikipedia.org/wiki/Single-page
 - Modular javascript development with requirejs
 - Productive css development with sass and compass
 - Simple html templating with [_.template](http://underscorejs.org/#template)
+- Separated `vendor.js` and `app.js` after built for better client caching
 
 
 Work Flow
