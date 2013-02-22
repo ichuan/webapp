@@ -17,7 +17,7 @@ dist:
 
 dist/img: $(IMGS)
 	mkdir -p dist/img
-	cp -rf img/* dist/img/
+	-cp -rf img/* dist/img/ 2>/dev/null || true
 	cp -rf vendor/bootstrap/img/* dist/img/
 	touch dist/img
 
