@@ -1,5 +1,5 @@
 FILES = dist/js/vendor.js dist/js/main.js dist/css/vendor.css dist/css/app.css
-IMGS = $(wildcard img/* vendor/bootstrap/img/*)
+IMGS = $(wildcard img/*)
 VENDORJS = vendor/require/require.js vendor/jquery/jquery.min.js \
 			vendor/bootstrap/js/bootstrap.min.js vendor/underscore.min.js \
 			vendor/json2.js vendor/backbone.min.js
@@ -18,7 +18,6 @@ dist:
 dist/img: $(IMGS)
 	mkdir -p dist/img
 	-cp -rf img/* dist/img/ 2>/dev/null || true
-	cp -rf vendor/bootstrap/img/* dist/img/
 	touch dist/img
 
 dist/index.html: index.html
