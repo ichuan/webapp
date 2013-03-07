@@ -1,8 +1,19 @@
-define(['bootstrap', 'router', 'tpl!templates/index.html'], function(_, _, tpl) {
-	return {
-		init: function() {
-			alert(tpl({name: 'val'}));
-			Backbone.history.start();
-		}
-	};
+define([
+    'backbone', 
+    'underscore', 
+    'tpl!templates/index.html',
+    'bootstrap', 
+], function(Backbone, _, tpl) {
+    var App = function() {};
+
+    _.extend(App.prototype, {
+        init: function() {
+            Backbone.history.start({pushState: true});
+        },
+
+        hello: function(val) {
+            alert(tpl({name: val}));
+        }
+    });
+    return new App;
 });

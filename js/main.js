@@ -26,6 +26,6 @@ require.config({
 	waitSeconds: 10
 });
 
-require(['app'], function(App) {
-	App.init();
+require(['app', 'router'], function(app) {
+	app.init();
 });
